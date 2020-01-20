@@ -1,0 +1,6 @@
+framework module Pods_quanti_di_quanti_diUITests {
+  umbrella header "Pods-quanti-di-quanti-diUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

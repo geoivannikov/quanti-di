@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A685B5F07AD4BF80C498E02 /* Pods_quanti_di_quanti_diUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE55230BDB55704BB38B083C /* Pods_quanti_di_quanti_diUITests.framework */; };
+		9CA3B15023D495E200671503 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA3B14F23D495E200671503 /* GoogleService-Info.plist */; };
+		9CA3B15323D4984700671503 /* WellcomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B15223D4984700671503 /* WellcomePageViewModel.swift */; };
+		9CA3B15623D4C7E700671503 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B15523D4C7E700671503 /* Constants.swift */; };
+		9CA3B15823D4CA7600671503 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B15723D4CA7600671503 /* Extensions.swift */; };
+		9CA3B15B23D4CB4B00671503 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B15A23D4CB4B00671503 /* Coordinator.swift */; };
+		9CA3B15D23D4CBA600671503 /* WellcomePageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B15C23D4CBA600671503 /* WellcomePageCoordinator.swift */; };
+		9CA3B15F23D4E76B00671503 /* LoginRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B15E23D4E76B00671503 /* LoginRegistrationViewController.swift */; };
+		9CA3B16123D4EA3E00671503 /* LoginRegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B16023D4EA3E00671503 /* LoginRegistrationCoordinator.swift */; };
+		9CA3B16323D4EEC700671503 /* LoginRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B16223D4EEC700671503 /* LoginRegistrationViewModel.swift */; };
+		9CA3B16623D4F9EC00671503 /* WellcomePageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B16523D4F9EC00671503 /* WellcomePageAction.swift */; };
+		9CA3B16823D5106200671503 /* LoginRegistrationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B16723D5106200671503 /* LoginRegistrationAction.swift */; };
+		9CA3B16A23D63B7400671503 /* ReachabilityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B16923D63B7400671503 /* ReachabilityController.swift */; };
+		9CDB055523D47D2300913C3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDB055423D47D2300913C3F /* AppDelegate.swift */; };
+		9CDB055C23D47D2300913C3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CDB055A23D47D2300913C3F /* Main.storyboard */; };
+		9CDB055E23D47D2400913C3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CDB055D23D47D2400913C3F /* Assets.xcassets */; };
+		9CDB056123D47D2400913C3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CDB055F23D47D2400913C3F /* LaunchScreen.storyboard */; };
+		9CDB056C23D47D2500913C3F /* quanti_diUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDB056B23D47D2500913C3F /* quanti_diUITests.swift */; };
+		9CDB057B23D48A5B00913C3F /* WellcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDB057A23D48A5B00913C3F /* WellcomePageViewController.swift */; };
+		9CDB057E23D48F2F00913C3F /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDB057D23D48F2F00913C3F /* FirebaseController.swift */; };
+		EFE02DE47B9E79F2962600B1 /* Pods_quanti_di.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCE9C7C957DB5A5DD180E76 /* Pods_quanti_di.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CDB056823D47D2500913C3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CDB054923D47D2300913C3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CDB055023D47D2300913C3F;
+			remoteInfo = "quanti-di";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26915DE5A233D054725474AE /* Pods-quanti-di-quanti-diUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quanti-di-quanti-diUITests.debug.xcconfig"; path = "Target Support Files/Pods-quanti-di-quanti-diUITests/Pods-quanti-di-quanti-diUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		26A7F20DD21AD44ACAC1FEE7 /* Pods-quanti-di-quanti-diUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quanti-di-quanti-diUITests.release.xcconfig"; path = "Target Support Files/Pods-quanti-di-quanti-diUITests/Pods-quanti-di-quanti-diUITests.release.xcconfig"; sourceTree = "<group>"; };
+		655FB940622746C547A9A20D /* Pods-quanti-di.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quanti-di.release.xcconfig"; path = "Target Support Files/Pods-quanti-di/Pods-quanti-di.release.xcconfig"; sourceTree = "<group>"; };
+		7FCE9C7C957DB5A5DD180E76 /* Pods_quanti_di.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quanti_di.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA3B14F23D495E200671503 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9CA3B15223D4984700671503 /* WellcomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellcomePageViewModel.swift; sourceTree = "<group>"; };
+		9CA3B15523D4C7E700671503 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9CA3B15723D4CA7600671503 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9CA3B15A23D4CB4B00671503 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		9CA3B15C23D4CBA600671503 /* WellcomePageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellcomePageCoordinator.swift; sourceTree = "<group>"; };
+		9CA3B15E23D4E76B00671503 /* LoginRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegistrationViewController.swift; sourceTree = "<group>"; };
+		9CA3B16023D4EA3E00671503 /* LoginRegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegistrationCoordinator.swift; sourceTree = "<group>"; };
+		9CA3B16223D4EEC700671503 /* LoginRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegistrationViewModel.swift; sourceTree = "<group>"; };
+		9CA3B16523D4F9EC00671503 /* WellcomePageAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellcomePageAction.swift; sourceTree = "<group>"; };
+		9CA3B16723D5106200671503 /* LoginRegistrationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegistrationAction.swift; sourceTree = "<group>"; };
+		9CA3B16923D63B7400671503 /* ReachabilityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityController.swift; sourceTree = "<group>"; };
+		9CDB055123D47D2300913C3F /* quanti-di.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quanti-di.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CDB055423D47D2300913C3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CDB055B23D47D2300913C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CDB055D23D47D2400913C3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CDB056023D47D2400913C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CDB056223D47D2400913C3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CDB056723D47D2500913C3F /* quanti-diUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "quanti-diUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CDB056B23D47D2500913C3F /* quanti_diUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quanti_diUITests.swift; sourceTree = "<group>"; };
+		9CDB056D23D47D2500913C3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CDB057A23D48A5B00913C3F /* WellcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellcomePageViewController.swift; sourceTree = "<group>"; };
+		9CDB057D23D48F2F00913C3F /* FirebaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		BB7535F58364CEAFD31E61A0 /* Pods-quanti-di.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quanti-di.debug.xcconfig"; path = "Target Support Files/Pods-quanti-di/Pods-quanti-di.debug.xcconfig"; sourceTree = "<group>"; };
+		DE55230BDB55704BB38B083C /* Pods_quanti_di_quanti_diUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quanti_di_quanti_diUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CDB054E23D47D2300913C3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE02DE47B9E79F2962600B1 /* Pods_quanti_di.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CDB056423D47D2500913C3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A685B5F07AD4BF80C498E02 /* Pods_quanti_di_quanti_diUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40FEE0954734502B7AC8B6BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB7535F58364CEAFD31E61A0 /* Pods-quanti-di.debug.xcconfig */,
+				655FB940622746C547A9A20D /* Pods-quanti-di.release.xcconfig */,
+				26915DE5A233D054725474AE /* Pods-quanti-di-quanti-diUITests.debug.xcconfig */,
+				26A7F20DD21AD44ACAC1FEE7 /* Pods-quanti-di-quanti-diUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9CA3B15123D4982D00671503 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9CA3B15223D4984700671503 /* WellcomePageViewModel.swift */,
+				9CA3B16223D4EEC700671503 /* LoginRegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9CA3B15423D4C7D800671503 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9CA3B15523D4C7E700671503 /* Constants.swift */,
+				9CA3B15723D4CA7600671503 /* Extensions.swift */,
+				9CA3B16923D63B7400671503 /* ReachabilityController.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9CA3B15923D4CB3500671503 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9CA3B15A23D4CB4B00671503 /* Coordinator.swift */,
+				9CA3B15C23D4CBA600671503 /* WellcomePageCoordinator.swift */,
+				9CA3B16023D4EA3E00671503 /* LoginRegistrationCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9CA3B16423D4F9D800671503 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9CA3B16523D4F9EC00671503 /* WellcomePageAction.swift */,
+				9CA3B16723D5106200671503 /* LoginRegistrationAction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CDB054823D47D2300913C3F = {
+			isa = PBXGroup;
+			children = (
+				9CDB055323D47D2300913C3F /* quanti-di */,
+				9CDB056A23D47D2500913C3F /* quanti-diUITests */,
+				9CDB055223D47D2300913C3F /* Products */,
+				40FEE0954734502B7AC8B6BF /* Pods */,
+				EDFDD4E4CAE659092EBA8AFB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9CDB055223D47D2300913C3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CDB055123D47D2300913C3F /* quanti-di.app */,
+				9CDB056723D47D2500913C3F /* quanti-diUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CDB055323D47D2300913C3F /* quanti-di */ = {
+			isa = PBXGroup;
+			children = (
+				9CA3B15923D4CB3500671503 /* Coordinator */,
+				9CA3B15123D4982D00671503 /* ViewModel */,
+				9CDB057723D47E3500913C3F /* ViewController */,
+				9CA3B16423D4F9D800671503 /* Model */,
+				9CDB057C23D48AA600913C3F /* FirebaseController */,
+				9CA3B15423D4C7D800671503 /* Utils */,
+				9CDB057623D47D7500913C3F /* SupportFiles */,
+				9CDB055F23D47D2400913C3F /* LaunchScreen.storyboard */,
+				9CDB055A23D47D2300913C3F /* Main.storyboard */,
+				9CDB056223D47D2400913C3F /* Info.plist */,
+				9CA3B14F23D495E200671503 /* GoogleService-Info.plist */,
+			);
+			path = "quanti-di";
+			sourceTree = "<group>";
+		};
+		9CDB056A23D47D2500913C3F /* quanti-diUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9CDB056B23D47D2500913C3F /* quanti_diUITests.swift */,
+				9CDB056D23D47D2500913C3F /* Info.plist */,
+			);
+			path = "quanti-diUITests";
+			sourceTree = "<group>";
+		};
+		9CDB057623D47D7500913C3F /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9CDB055D23D47D2400913C3F /* Assets.xcassets */,
+				9CDB055423D47D2300913C3F /* AppDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		9CDB057723D47E3500913C3F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9CDB057A23D48A5B00913C3F /* WellcomePageViewController.swift */,
+				9CA3B15E23D4E76B00671503 /* LoginRegistrationViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9CDB057C23D48AA600913C3F /* FirebaseController */ = {
+			isa = PBXGroup;
+			children = (
+				9CDB057D23D48F2F00913C3F /* FirebaseController.swift */,
+			);
+			path = FirebaseController;
+			sourceTree = "<group>";
+		};
+		EDFDD4E4CAE659092EBA8AFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FCE9C7C957DB5A5DD180E76 /* Pods_quanti_di.framework */,
+				DE55230BDB55704BB38B083C /* Pods_quanti_di_quanti_diUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CDB055023D47D2300913C3F /* quanti-di */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CDB057023D47D2500913C3F /* Build configuration list for PBXNativeTarget "quanti-di" */;
+			buildPhases = (
+				EEF6B1739809D4CFA3F66B56 /* [CP] Check Pods Manifest.lock */,
+				9CDB054D23D47D2300913C3F /* Sources */,
+				9CDB054E23D47D2300913C3F /* Frameworks */,
+				9CDB054F23D47D2300913C3F /* Resources */,
+				66BDEAED6C94690C7EC87DAA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "quanti-di";
+			productName = "quanti-di";
+			productReference = 9CDB055123D47D2300913C3F /* quanti-di.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CDB056623D47D2500913C3F /* quanti-diUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CDB057323D47D2500913C3F /* Build configuration list for PBXNativeTarget "quanti-diUITests" */;
+			buildPhases = (
+				EC65B7082F059FFF4E850934 /* [CP] Check Pods Manifest.lock */,
+				9CDB056323D47D2500913C3F /* Sources */,
+				9CDB056423D47D2500913C3F /* Frameworks */,
+				9CDB056523D47D2500913C3F /* Resources */,
+				09C9B119A78B43B178637403 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CDB056923D47D2500913C3F /* PBXTargetDependency */,
+			);
+			name = "quanti-diUITests";
+			productName = "quanti-diUITests";
+			productReference = 9CDB056723D47D2500913C3F /* quanti-diUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CDB054923D47D2300913C3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "George Ivannikov";
+				TargetAttributes = {
+					9CDB055023D47D2300913C3F = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					9CDB056623D47D2500913C3F = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 9CDB055023D47D2300913C3F;
+					};
+				};
+			};
+			buildConfigurationList = 9CDB054C23D47D2300913C3F /* Build configuration list for PBXProject "quanti-di" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CDB054823D47D2300913C3F;
+			productRefGroup = 9CDB055223D47D2300913C3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CDB055023D47D2300913C3F /* quanti-di */,
+				9CDB056623D47D2500913C3F /* quanti-diUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CDB054F23D47D2300913C3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CDB056123D47D2400913C3F /* LaunchScreen.storyboard in Resources */,
+				9CA3B15023D495E200671503 /* GoogleService-Info.plist in Resources */,
+				9CDB055E23D47D2400913C3F /* Assets.xcassets in Resources */,
+				9CDB055C23D47D2300913C3F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CDB056523D47D2500913C3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09C9B119A78B43B178637403 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quanti-di-quanti-diUITests/Pods-quanti-di-quanti-diUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quanti-di-quanti-diUITests/Pods-quanti-di-quanti-diUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quanti-di-quanti-diUITests/Pods-quanti-di-quanti-diUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66BDEAED6C94690C7EC87DAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quanti-di/Pods-quanti-di-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quanti-di/Pods-quanti-di-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quanti-di/Pods-quanti-di-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC65B7082F059FFF4E850934 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quanti-di-quanti-diUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEF6B1739809D4CFA3F66B56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quanti-di-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CDB054D23D47D2300913C3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA3B16A23D63B7400671503 /* ReachabilityController.swift in Sources */,
+				9CA3B15623D4C7E700671503 /* Constants.swift in Sources */,
+				9CA3B15D23D4CBA600671503 /* WellcomePageCoordinator.swift in Sources */,
+				9CA3B16323D4EEC700671503 /* LoginRegistrationViewModel.swift in Sources */,
+				9CA3B16823D5106200671503 /* LoginRegistrationAction.swift in Sources */,
+				9CA3B15823D4CA7600671503 /* Extensions.swift in Sources */,
+				9CDB057E23D48F2F00913C3F /* FirebaseController.swift in Sources */,
+				9CDB057B23D48A5B00913C3F /* WellcomePageViewController.swift in Sources */,
+				9CA3B16623D4F9EC00671503 /* WellcomePageAction.swift in Sources */,
+				9CA3B16123D4EA3E00671503 /* LoginRegistrationCoordinator.swift in Sources */,
+				9CA3B15F23D4E76B00671503 /* LoginRegistrationViewController.swift in Sources */,
+				9CDB055523D47D2300913C3F /* AppDelegate.swift in Sources */,
+				9CA3B15323D4984700671503 /* WellcomePageViewModel.swift in Sources */,
+				9CA3B15B23D4CB4B00671503 /* Coordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CDB056323D47D2500913C3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CDB056C23D47D2500913C3F /* quanti_diUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CDB056923D47D2500913C3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CDB055023D47D2300913C3F /* quanti-di */;
+			targetProxy = 9CDB056823D47D2500913C3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CDB055A23D47D2300913C3F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CDB055B23D47D2300913C3F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CDB055F23D47D2400913C3F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CDB056023D47D2400913C3F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CDB056E23D47D2500913C3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9CDB056F23D47D2500913C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CDB057123D47D2500913C3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB7535F58364CEAFD31E61A0 /* Pods-quanti-di.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8JH59DJ45H;
+				INFOPLIST_FILE = "quanti-di/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "G8.quanti-di";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CDB057223D47D2500913C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 655FB940622746C547A9A20D /* Pods-quanti-di.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8JH59DJ45H;
+				INFOPLIST_FILE = "quanti-di/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "G8.quanti-di";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9CDB057423D47D2500913C3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26915DE5A233D054725474AE /* Pods-quanti-di-quanti-diUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8JH59DJ45H;
+				INFOPLIST_FILE = "quanti-diUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "G8.quanti-diUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "quanti-di";
+			};
+			name = Debug;
+		};
+		9CDB057523D47D2500913C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26A7F20DD21AD44ACAC1FEE7 /* Pods-quanti-di-quanti-diUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8JH59DJ45H;
+				INFOPLIST_FILE = "quanti-diUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "G8.quanti-diUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "quanti-di";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CDB054C23D47D2300913C3F /* Build configuration list for PBXProject "quanti-di" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CDB056E23D47D2500913C3F /* Debug */,
+				9CDB056F23D47D2500913C3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CDB057023D47D2500913C3F /* Build configuration list for PBXNativeTarget "quanti-di" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CDB057123D47D2500913C3F /* Debug */,
+				9CDB057223D47D2500913C3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CDB057323D47D2500913C3F /* Build configuration list for PBXNativeTarget "quanti-diUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CDB057423D47D2500913C3F /* Debug */,
+				9CDB057523D47D2500913C3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CDB054923D47D2300913C3F /* Project object */;
+}
