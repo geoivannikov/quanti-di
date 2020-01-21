@@ -12,7 +12,7 @@ import RxSwift
 import RxCocoa
 
 class WellcomePageCoordinator: Coordinator {
-    var navigationController: UINavigationController
+    private let navigationController: UINavigationController
     private let loginRegistrationCoordinator: LoginRegistrationCoordinator
     private let bag = DisposeBag()
     

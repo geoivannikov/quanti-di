@@ -11,7 +11,7 @@ import UIKit
 import RxSwift
 
 final class LoginRegistrationCoordinator: Coordinator {
-    var navigationController: UINavigationController
+    private let navigationController: UINavigationController
     private let presentNavigationController: UINavigationController
     private let bag = DisposeBag()
     

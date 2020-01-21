@@ -38,7 +38,7 @@ class LoginRegistrationViewModelTests: XCTestCase {
             })
             .disposed(by: bag)
         
-        viewModel.loginAction.onNext(())
+        viewModel.doLogin()
     }
     
     func testEmptyEmailField() {
@@ -59,7 +59,7 @@ class LoginRegistrationViewModelTests: XCTestCase {
             })
             .disposed(by: bag)
         
-        viewModel.loginAction.onNext(())
+        viewModel.doLogin()
     }
     
     func testEmptyPasswordField() {
@@ -80,7 +80,7 @@ class LoginRegistrationViewModelTests: XCTestCase {
             })
             .disposed(by: bag)
         
-        viewModel.loginAction.onNext(())
+        viewModel.doLogin()
     }
     
     func testOfflineLogin() {
@@ -95,7 +95,7 @@ class LoginRegistrationViewModelTests: XCTestCase {
             })
             .disposed(by: bag)
         
-        viewModel.loginAction.onNext(())
+        viewModel.doLogin()
     }
     
     func testSuccessSignIn() {
@@ -118,7 +118,7 @@ class LoginRegistrationViewModelTests: XCTestCase {
             })
             .disposed(by: bag)
         
-        viewModel.loginAction.onNext(())
+        viewModel.doLogin()
         waitForExpectations(timeout: Constants.TestConstants.timeout)
     }
     
@@ -134,6 +134,6 @@ class LoginRegistrationViewModelTests: XCTestCase {
             })
             .disposed(by: bag)
         
-        viewModel.loginAction.onNext(())
+        viewModel.doLogin()
     }
 }

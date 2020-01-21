@@ -71,10 +71,8 @@ class LoginRegistrationViewController: UIViewController {
             .map { self.segmentedControl.selectedSegmentIndex == 0 }
             .do(onNext: { [weak self] isLogin in
                 if isLogin {
-                    self?.loginRegistrationViewModel.loginAction.onNext(())
-                } else {
-                    self?.loginRegistrationViewModel.registrationAction.onNext(())
-                }
+                    self?.loginRegistrationViewModel.doLogin()
+                } else {}
             })
             .subscribe()
             .disposed(by: bag)

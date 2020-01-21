@@ -9,11 +9,7 @@
 import Foundation
 
 enum LaunchArgumentKey: String {
-    case url
-    case gateway
     case uitest
-    case cache
-    case isOffline
 }
 
 extension LaunchArgumentKey {

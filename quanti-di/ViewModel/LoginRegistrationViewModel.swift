@@ -15,11 +15,10 @@ protocol LoginRegistrationViewModelProtocol {
     var email: BehaviorRelay<String?> { get }
     var password: BehaviorRelay<String?> { get }
     var confirmPassword: BehaviorRelay<String?> { get }
-    var loginAction: PublishSubject<Void> { get }
-    var registrationAction: PublishSubject<Void> { get }
     var isEmptyFieldsObservable: Observable<Bool> { get }
     var startActionObservable: Observable<LoginRegistrationAction> { get }
     var isLoadingStateObservable: Observable<Bool> { get }
+    func doLogin()
 }
 
 final class LoginRegistrationViewModel: LoginRegistrationViewModelProtocol {
@@ -27,12 +26,11 @@ final class LoginRegistrationViewModel: LoginRegistrationViewModelProtocol {
     let email = BehaviorRelay<String?>(value: "")
     let password = BehaviorRelay<String?>(value: "")
     let confirmPassword = BehaviorRelay<String?>(value: "")
-    let loginAction: PublishSubject<Void> = PublishSubject<Void>()
-    let registrationAction: PublishSubject<Void> = PublishSubject<Void>()
     let isEmptyFieldsObservable: Observable<Bool>
     let startActionObservable: Observable<LoginRegistrationAction>
     let isLoadingStateObservable: Observable<Bool>
 
+    private let loginAction: PublishSubject<Void> = PublishSubject<Void>()
     private let isLoadingState: PublishSubject<Bool> = PublishSubject<Bool>()    
     private let firebaseController: FirebaseControllerProtocol
     private var bag = DisposeBag()
@@ -83,5 +81,9 @@ final class LoginRegistrationViewModel: LoginRegistrationViewModelProtocol {
                 }
             })
             .disposed(by: bag)
+    }
+    
+    func doLogin() {
+        loginAction.onNext(())
     }
 }
