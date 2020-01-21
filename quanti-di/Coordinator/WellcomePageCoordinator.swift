@@ -13,8 +13,8 @@ import RxCocoa
 
 class WellcomePageCoordinator: Coordinator {
     var navigationController: UINavigationController
-    private var loginRegistrationCoordinator: LoginRegistrationCoordinator
-    private var bag = DisposeBag()
+    private let loginRegistrationCoordinator: LoginRegistrationCoordinator
+    private let bag = DisposeBag()
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -31,7 +31,6 @@ class WellcomePageCoordinator: Coordinator {
             .disposed(by: bag)
         
         let viewController = WellcomePageViewController.instantiate(wellcomePageViewModel: wellcomePageViewModel)
-        viewController.wellcomePageCoordinator = self
         navigationController.pushViewController(viewController, animated: false)
     }
     
@@ -39,9 +38,9 @@ class WellcomePageCoordinator: Coordinator {
         switch action {
             case .navigateToLogin:
                 loginRegistrationCoordinator.start()
-        case .displayNoConnectionMessage:
-            let alert = UIAlertController.errorAlert(content: "Check your internet connection")
-            navigationController.present(alert, animated: true)
+            case .displayNoConnectionMessage:
+                let alert = UIAlertController.errorAlert(content: "Check your internet connection")
+                navigationController.present(alert, animated: true)
         }
     }
 }

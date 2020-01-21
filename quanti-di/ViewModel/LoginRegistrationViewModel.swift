@@ -38,8 +38,8 @@ final class LoginRegistrationViewModel: LoginRegistrationViewModelProtocol {
     private var bag = DisposeBag()
     
     init(
-        firebaseController: FirebaseControllerProtocol = FirebaseController(),
-        reachabilityController: ReachabilityControllerProtocolol = ReachabilityController()
+        firebaseController: FirebaseControllerProtocol = QuantiDI.forceResolve(),
+        reachabilityController: ReachabilityControllerProtocolol = QuantiDI.forceResolve()
     ) {
         self.firebaseController = firebaseController
         let startAction = PublishSubject<LoginRegistrationAction>()
@@ -53,7 +53,7 @@ final class LoginRegistrationViewModel: LoginRegistrationViewModelProtocol {
                 if isEmpty {
                     startAction.onNext(.emptyFieldsAlert)
                 } else {
-                    if reachabilityController.isConnectedToNetwork {
+                    if reachabilityController.isConnectedToNetwork() {
                         self.isLoadingState.onNext(true)
                         let loginObservable = firebaseController.signIn(email: self.email.value ?? "",
                                                                         password: self.password.value ?? "")

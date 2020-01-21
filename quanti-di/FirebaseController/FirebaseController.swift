@@ -12,20 +12,21 @@ import FirebaseDatabase
 import RxSwift
 
 protocol FirebaseControllerProtocol {
-    var isUserLoggedIn: Bool { get }
+    func isUserLoggedIn() -> Bool
     func getUsername() -> Observable<String?>
     func signIn(email: String, password: String) -> Observable<LoginRegistrationAction>
     func signOut()
 }
 
 final class FirebaseController: FirebaseControllerProtocol {
-    var isUserLoggedIn: Bool = {
-        return Auth.auth().currentUser?.uid != nil
-    }()
-    var userID: String? = {
+    private var userID: String? = {
         let id = Auth.auth().currentUser?.uid
         return id
     }()
+    
+    func isUserLoggedIn() -> Bool {
+        return Auth.auth().currentUser?.uid != nil
+    }
     
     func getUsername() -> Observable<String?> {
         return Observable.create { observable in

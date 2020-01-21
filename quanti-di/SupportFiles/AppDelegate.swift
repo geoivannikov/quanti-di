@@ -15,7 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var coordinator: WellcomePageCoordinator?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        FirebaseApp.configure()
+        if LaunchArgumentKey.uitest.bool {
+        // Configuration for uitests
+        } else {
+            FirebaseApp.configure()
+            QuantiDI.start()
+        }
+
         let navigationController = UINavigationController()
         coordinator = WellcomePageCoordinator(navigationController: navigationController)
         coordinator?.start()

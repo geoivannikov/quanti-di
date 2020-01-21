@@ -10,11 +10,11 @@ import Foundation
 import SystemConfiguration
 
 protocol ReachabilityControllerProtocolol {
-    var isConnectedToNetwork: Bool { get }
+    func isConnectedToNetwork() -> Bool
 }
 
 final class ReachabilityController: ReachabilityControllerProtocolol {
-    var isConnectedToNetwork: Bool {
+    func isConnectedToNetwork() -> Bool {
         return Reachability.isConnectedToNetwork()
     }
 }

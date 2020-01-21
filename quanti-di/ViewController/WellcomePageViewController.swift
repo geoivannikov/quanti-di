@@ -15,8 +15,6 @@ class WellcomePageViewController: UIViewController {
     @IBOutlet weak var logOutButton: UIButton!
     
     private var wellcomePageViewModel: WellcomePageViewModelProtocol!
-    weak var wellcomePageCoordinator: WellcomePageCoordinator?
-    
     private var bag = DisposeBag()
 
     static func instantiate(

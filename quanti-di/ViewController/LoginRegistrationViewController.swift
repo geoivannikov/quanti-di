@@ -20,8 +20,6 @@ class LoginRegistrationViewController: UIViewController {
     @IBOutlet weak var actionButton: UIButton!
     
     private var loginRegistrationViewModel: LoginRegistrationViewModelProtocol!
-    weak var loginRegistrationCoordinator: LoginRegistrationCoordinator?
-    
     private var bag = DisposeBag()
     
     static func instantiate(

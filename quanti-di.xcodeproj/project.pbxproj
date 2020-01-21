@@ -20,11 +20,24 @@
 		9CA3B16623D4F9EC00671503 /* WellcomePageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B16523D4F9EC00671503 /* WellcomePageAction.swift */; };
 		9CA3B16823D5106200671503 /* LoginRegistrationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B16723D5106200671503 /* LoginRegistrationAction.swift */; };
 		9CA3B16A23D63B7400671503 /* ReachabilityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B16923D63B7400671503 /* ReachabilityController.swift */; };
+		9CA3B16D23D6633800671503 /* QuantiDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B16C23D6633800671503 /* QuantiDI.swift */; };
+		9CA3B17023D6673A00671503 /* WellcomePageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B16F23D6673A00671503 /* WellcomePageViewModelTests.swift */; };
+		9CA3B17123D6680500671503 /* WellcomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B15223D4984700671503 /* WellcomePageViewModel.swift */; };
+		9CA3B17223D6680800671503 /* LoginRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B16223D4EEC700671503 /* LoginRegistrationViewModel.swift */; };
+		9CA3B17523D6686400671503 /* FirebaseControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B17423D6686400671503 /* FirebaseControllerMock.swift */; };
+		9CA3B17723D6687900671503 /* ReachabilityControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B17623D6687900671503 /* ReachabilityControllerMock.swift */; };
+		9CA3B17823D6688200671503 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDB057D23D48F2F00913C3F /* FirebaseController.swift */; };
+		9CA3B17923D6688700671503 /* ReachabilityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B16923D63B7400671503 /* ReachabilityController.swift */; };
+		9CA3B17A23D668F400671503 /* LoginRegistrationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B16723D5106200671503 /* LoginRegistrationAction.swift */; };
+		9CA3B17B23D668F700671503 /* WellcomePageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B16523D4F9EC00671503 /* WellcomePageAction.swift */; };
+		9CA3B17C23D66A8800671503 /* QuantiDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B16C23D6633800671503 /* QuantiDI.swift */; };
+		9CA3B17E23D6725B00671503 /* LoginRegistrationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B17D23D6725B00671503 /* LoginRegistrationViewModelTests.swift */; };
+		9CA3B18023D673B400671503 /* LaunchArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B17F23D673B400671503 /* LaunchArgument.swift */; };
+		9CA3B18123D678C400671503 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3B15523D4C7E700671503 /* Constants.swift */; };
 		9CDB055523D47D2300913C3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDB055423D47D2300913C3F /* AppDelegate.swift */; };
 		9CDB055C23D47D2300913C3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CDB055A23D47D2300913C3F /* Main.storyboard */; };
 		9CDB055E23D47D2400913C3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CDB055D23D47D2400913C3F /* Assets.xcassets */; };
 		9CDB056123D47D2400913C3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CDB055F23D47D2400913C3F /* LaunchScreen.storyboard */; };
-		9CDB056C23D47D2500913C3F /* quanti_diUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDB056B23D47D2500913C3F /* quanti_diUITests.swift */; };
 		9CDB057B23D48A5B00913C3F /* WellcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDB057A23D48A5B00913C3F /* WellcomePageViewController.swift */; };
 		9CDB057E23D48F2F00913C3F /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDB057D23D48F2F00913C3F /* FirebaseController.swift */; };
 		EFE02DE47B9E79F2962600B1 /* Pods_quanti_di.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCE9C7C957DB5A5DD180E76 /* Pods_quanti_di.framework */; };
@@ -57,6 +70,12 @@
 		9CA3B16523D4F9EC00671503 /* WellcomePageAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellcomePageAction.swift; sourceTree = "<group>"; };
 		9CA3B16723D5106200671503 /* LoginRegistrationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegistrationAction.swift; sourceTree = "<group>"; };
 		9CA3B16923D63B7400671503 /* ReachabilityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityController.swift; sourceTree = "<group>"; };
+		9CA3B16C23D6633800671503 /* QuantiDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantiDI.swift; sourceTree = "<group>"; };
+		9CA3B16F23D6673A00671503 /* WellcomePageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellcomePageViewModelTests.swift; sourceTree = "<group>"; };
+		9CA3B17423D6686400671503 /* FirebaseControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseControllerMock.swift; sourceTree = "<group>"; };
+		9CA3B17623D6687900671503 /* ReachabilityControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityControllerMock.swift; sourceTree = "<group>"; };
+		9CA3B17D23D6725B00671503 /* LoginRegistrationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegistrationViewModelTests.swift; sourceTree = "<group>"; };
+		9CA3B17F23D673B400671503 /* LaunchArgument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchArgument.swift; sourceTree = "<group>"; };
 		9CDB055123D47D2300913C3F /* quanti-di.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quanti-di.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CDB055423D47D2300913C3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CDB055B23D47D2300913C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,7 +83,6 @@
 		9CDB056023D47D2400913C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CDB056223D47D2400913C3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CDB056723D47D2500913C3F /* quanti-diUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "quanti-diUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CDB056B23D47D2500913C3F /* quanti_diUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quanti_diUITests.swift; sourceTree = "<group>"; };
 		9CDB056D23D47D2500913C3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CDB057A23D48A5B00913C3F /* WellcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellcomePageViewController.swift; sourceTree = "<group>"; };
 		9CDB057D23D48F2F00913C3F /* FirebaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
@@ -118,6 +136,7 @@
 				9CA3B15523D4C7E700671503 /* Constants.swift */,
 				9CA3B15723D4CA7600671503 /* Extensions.swift */,
 				9CA3B16923D63B7400671503 /* ReachabilityController.swift */,
+				9CA3B17F23D673B400671503 /* LaunchArgument.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -139,6 +158,32 @@
 				9CA3B16723D5106200671503 /* LoginRegistrationAction.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9CA3B16B23D6632500671503 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				9CA3B16C23D6633800671503 /* QuantiDI.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		9CA3B16E23D6671400671503 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CA3B16F23D6673A00671503 /* WellcomePageViewModelTests.swift */,
+				9CA3B17D23D6725B00671503 /* LoginRegistrationViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		9CA3B17323D6683900671503 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				9CA3B17423D6686400671503 /* FirebaseControllerMock.swift */,
+				9CA3B17623D6687900671503 /* ReachabilityControllerMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		9CDB054823D47D2300913C3F = {
@@ -169,6 +214,7 @@
 				9CDB057723D47E3500913C3F /* ViewController */,
 				9CA3B16423D4F9D800671503 /* Model */,
 				9CDB057C23D48AA600913C3F /* FirebaseController */,
+				9CA3B16B23D6632500671503 /* DI */,
 				9CA3B15423D4C7D800671503 /* Utils */,
 				9CDB057623D47D7500913C3F /* SupportFiles */,
 				9CDB055F23D47D2400913C3F /* LaunchScreen.storyboard */,
@@ -182,7 +228,8 @@
 		9CDB056A23D47D2500913C3F /* quanti-diUITests */ = {
 			isa = PBXGroup;
 			children = (
-				9CDB056B23D47D2500913C3F /* quanti_diUITests.swift */,
+				9CA3B17323D6683900671503 /* Mocks */,
+				9CA3B16E23D6671400671503 /* ViewModelTests */,
 				9CDB056D23D47D2500913C3F /* Info.plist */,
 			);
 			path = "quanti-diUITests";
@@ -417,11 +464,13 @@
 				9CA3B16823D5106200671503 /* LoginRegistrationAction.swift in Sources */,
 				9CA3B15823D4CA7600671503 /* Extensions.swift in Sources */,
 				9CDB057E23D48F2F00913C3F /* FirebaseController.swift in Sources */,
+				9CA3B16D23D6633800671503 /* QuantiDI.swift in Sources */,
 				9CDB057B23D48A5B00913C3F /* WellcomePageViewController.swift in Sources */,
 				9CA3B16623D4F9EC00671503 /* WellcomePageAction.swift in Sources */,
 				9CA3B16123D4EA3E00671503 /* LoginRegistrationCoordinator.swift in Sources */,
 				9CA3B15F23D4E76B00671503 /* LoginRegistrationViewController.swift in Sources */,
 				9CDB055523D47D2300913C3F /* AppDelegate.swift in Sources */,
+				9CA3B18023D673B400671503 /* LaunchArgument.swift in Sources */,
 				9CA3B15323D4984700671503 /* WellcomePageViewModel.swift in Sources */,
 				9CA3B15B23D4CB4B00671503 /* Coordinator.swift in Sources */,
 			);
@@ -431,7 +480,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CDB056C23D47D2500913C3F /* quanti_diUITests.swift in Sources */,
+				9CA3B17E23D6725B00671503 /* LoginRegistrationViewModelTests.swift in Sources */,
+				9CA3B17023D6673A00671503 /* WellcomePageViewModelTests.swift in Sources */,
+				9CA3B17823D6688200671503 /* FirebaseController.swift in Sources */,
+				9CA3B17C23D66A8800671503 /* QuantiDI.swift in Sources */,
+				9CA3B17B23D668F700671503 /* WellcomePageAction.swift in Sources */,
+				9CA3B17123D6680500671503 /* WellcomePageViewModel.swift in Sources */,
+				9CA3B17523D6686400671503 /* FirebaseControllerMock.swift in Sources */,
+				9CA3B17923D6688700671503 /* ReachabilityController.swift in Sources */,
+				9CA3B17223D6680800671503 /* LoginRegistrationViewModel.swift in Sources */,
+				9CA3B17723D6687900671503 /* ReachabilityControllerMock.swift in Sources */,
+				9CA3B17A23D668F400671503 /* LoginRegistrationAction.swift in Sources */,
+				9CA3B18123D678C400671503 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,7 +654,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "G8.quanti-di";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -613,7 +673,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "G8.quanti-di";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

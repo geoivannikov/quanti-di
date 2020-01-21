@@ -17,4 +17,8 @@ struct Constants {
         case wellcomePage = "WellcomePageViewController"
         case loginRegistration = "LoginRegistrationViewController"
     }
+    
+    struct TestConstants {
+        static let timeout: TimeInterval = 3
+    }
 }

@@ -33,8 +33,8 @@ final class WellcomePageViewModel: WellcomePageViewModelProtocol {
     private var bag = DisposeBag()
 
     init(
-        firebaseController: FirebaseControllerProtocol = FirebaseController(),
-        reachabilityController: ReachabilityControllerProtocolol = ReachabilityController()
+        firebaseController: FirebaseControllerProtocol = QuantiDI.forceResolve(),
+        reachabilityController: ReachabilityControllerProtocolol = QuantiDI.forceResolve()
     ) {
         self.firebaseController = firebaseController
         let startAction = PublishSubject<WellcomePageAction>()
@@ -52,7 +52,7 @@ final class WellcomePageViewModel: WellcomePageViewModelProtocol {
                 if !isUserLoggedIn {
                     startAction.onNext(.navigateToLogin)
                 } else {
-                    if reachabilityController.isConnectedToNetwork {
+                    if reachabilityController.isConnectedToNetwork() {
                         firebaseController.getUsername()
                         .map { username in
                             "Wellcome, " + (username ?? "user") + "!"
@@ -68,7 +68,7 @@ final class WellcomePageViewModel: WellcomePageViewModelProtocol {
     }
     
     func applicationOpened() {
-        isUserLoggedIn.onNext(firebaseController.isUserLoggedIn)
+        isUserLoggedIn.onNext(firebaseController.isUserLoggedIn())
     }
     
     func doLogout() {

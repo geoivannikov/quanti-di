@@ -13,7 +13,7 @@ import RxSwift
 final class LoginRegistrationCoordinator: Coordinator {
     var navigationController: UINavigationController
     private let presentNavigationController: UINavigationController
-    private var bag = DisposeBag()
+    private let bag = DisposeBag()
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -22,6 +22,7 @@ final class LoginRegistrationCoordinator: Coordinator {
     
     func start() {
         let loginRegistrationViewModel = LoginRegistrationViewModel()
+        
         loginRegistrationViewModel.startActionObservable
             .subscribe(onNext: { [weak self] type in
                 self?.takeAction(for: type)
@@ -29,7 +30,6 @@ final class LoginRegistrationCoordinator: Coordinator {
             .disposed(by: bag)
         
         let viewController = LoginRegistrationViewController.instantiate(loginRegistrationViewModel: loginRegistrationViewModel)
-        viewController.loginRegistrationCoordinator = self
         presentNavigationController.viewControllers = [viewController]
         presentNavigationController.modalPresentationStyle = .fullScreen
         navigationController.present(presentNavigationController, animated: false, completion: nil)
